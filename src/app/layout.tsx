@@ -54,7 +54,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" className="scroll-smooth scroll-pt-24">
       <body
         className={`${montserrat.variable} ${geistMono.variable} antialiased font-sans bg-background text-foreground`}
       >
