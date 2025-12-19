@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Casa Fran Eventos 🥂
 
-## Getting Started
+Sitio web oficial y Landing Page para **Casa Fran**, servicio de banquetería integral y producción de eventos ubicado en la VI Región (Doñihue y Coltauco), Chile.
 
-First, run the development server:
+Desarrollado con tecnologías modernas para asegurar velocidad, SEO y una experiencia de usuario de lujo ("Premium").
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Características Principales
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **Diseño UX/UI Premium:** Estética elegante con paleta de colores personalizada (Navy Blue & Rose Gold).
+* **Totalmente Responsive:** Adaptable a móviles, tablets y escritorio (Mobile First).
+* **Next.js 15 (App Router):** Última versión del framework para máximo rendimiento y SEO.
+* **Animaciones Suaves:**
+    * **Preloader (Splash Screen):** Pantalla de carga inicial con el logo.
+    * **Scroll Reveal:** Elementos que aparecen suavemente al bajar.
+    * **Navbar Dinámico:** Cambia de transparente a sólido al hacer scroll.
+* **Galería Interactiva (Lightbox):** Visualización de fotos en pantalla completa.
+* **Secciones Clave:**
+    * Servicios (Bodas, Graduaciones, Empresas).
+    * Testimonios (Prueba social).
+    * Preguntas Frecuentes (Acordeón FAQ).
+* **Formulario Funcional:** Integrado con **Formspree** para envío de correos directo sin backend complejo.
+* **Botón Flotante:** Acceso directo a WhatsApp.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tecnologías Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Framework:** [Next.js 15](https://nextjs.org/)
+* **Lenguaje:** TypeScript / React
+* **Estilos:** [Tailwind CSS](https://tailwindcss.com/)
+* **Animaciones:** Framer Motion / CSS Transitions
+* **Formularios:** [@formspree/react](https://formspree.io/)
+* **Iconos:** Lucide React
+* **Despliegue:** Vercel
 
-## Learn More
+## 📦 Instalación y Uso Local
 
-To learn more about Next.js, take a look at the following resources:
+Sigue estos pasos para correr el proyecto en tu computadora:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone [https://github.com/tu-usuario/casa_fran.git](https://github.com/tu-usuario/casa_fran.git)
+    cd casa_fran
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2.  **Instalar dependencias:**
+    ```bash
+    npm install
+    ```
 
-## Deploy on Vercel
+3.  **Correr el servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4.  Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚙️ Configuración
+
+### Formulario de Contacto
+El proyecto utiliza **Formspree** para manejar los envíos del formulario.
+El ID del formulario está configurado en el componente `ContactForm.tsx`.
+
+Para cambiar el correo de destino:
+1. Crea una cuenta en [Formspree](https://formspree.io/).
+2. Crea un nuevo formulario y obtén tu nuevo ID.
+3. Reemplaza el ID en `useForm("TU_NUEVO_ID")` en el código.
+
+### Imágenes
+Las imágenes se encuentran en la carpeta `/public/images/`.
+* Logo: `/public/images/logo1.png`
+* Hero Background: `/public/images/hero-bg.jpg`
+
+## 🚀 Despliegue (Deploy)
+
+La forma más fácil de publicar este sitio es usando **Vercel** (los creadores de Next.js).
+
+1.  Sube tu código a GitHub.
+2.  Importa el repositorio en Vercel.
+3.  Vercel detectará automáticamente la configuración.
+4.  ¡Listo! Tu sitio estará online en minutos con HTTPS incluido.
+
+## 📄 Licencia
+
+Este proyecto es de uso privado para Casa Fran Eventos.
+
+---
+Desarrollado con ❤️ para Casa Fran.
